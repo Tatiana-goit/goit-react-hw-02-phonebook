@@ -52,7 +52,6 @@ class Form extends Component {
             ></input>
           </label>
 
-          <br />
           <label className={s.label}>
           <span className={s.name}>Number</span>
             <input className={s.input}
@@ -66,7 +65,6 @@ class Form extends Component {
             ></input>
           </label>
 
-          <br />
           <button  className={s.button} type="submit">Add contact</button>
         </form>
       </div>
