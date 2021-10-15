@@ -5,7 +5,6 @@ class Form extends Component {
   state = {
     name: '',
     number: '',
-    contact: null,
   };
 
   handleChange = e => {
@@ -22,7 +21,6 @@ class Form extends Component {
       name,
       number,
     };
-    this.setState({ contact });
     this.props.addNewContact(contact);
 
     this.resetForm();

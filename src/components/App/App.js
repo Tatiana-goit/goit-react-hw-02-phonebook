@@ -19,11 +19,11 @@ class App extends Component {
   };
 
   addNewContact = obj => {
-    const NewContact = { ...obj, id: uuid() }; 
+    const newContact = { ...obj, id: uuid() }; 
 
     const searchSameName = this.state.contacts
-    .map(element => element.name)
-    .includes(obj.name);
+    .map(element => element.name.toLowerCase())
+    .includes(obj.name.toLowerCase());
 
     searchSameName
     ? 
@@ -31,7 +31,7 @@ class App extends Component {
     :   
     this.setState(prevState => {
       return {
-        contacts: [...prevState.contacts, NewContact],
+        contacts: [...prevState.contacts, newContact],
       };
     }); 
   };
