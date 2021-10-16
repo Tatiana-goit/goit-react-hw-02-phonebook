@@ -63,7 +63,7 @@ class Form extends Component {
             ></input>
           </label>
 
-          <button  className={s.button} type="submit">Add contact</button>
+          <button  className={s.button} type="submit">Add</button>
         </form>
       </div>
     );

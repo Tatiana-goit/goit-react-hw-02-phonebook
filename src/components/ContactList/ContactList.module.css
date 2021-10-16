@@ -1,29 +1,22 @@
 .list{
-    padding-left: 130px;
-    padding-right: 140px;
-    padding-top: 20px;
+padding: 20px 130px;
 }
 
 .item{
-    margin-bottom: 12px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.info {
+    width: 600px;
+    height: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .name {
-    margin-right: 20px;
+    width: 230px;
     font-size: 18px;
-}
-
-.button {
-    border: none;
-    padding: 5px 16px;
-    font-size: 18px;
-    border-radius: 5px;
-    box-shadow: rgba(65, 58, 58, 0.2) 0 0 5px 2px;
-    cursor: pointer;
-}
-
-.button:hover{
-    box-shadow: 0 4px 15px 0 rgba(70, 73, 77, 0.75);
-}
+    text-align: left;
+} 
