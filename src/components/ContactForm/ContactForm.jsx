@@ -4,7 +4,7 @@ import s from './ContactForm.module.css';
 class Form extends Component {
   state = {
     name: '',
-    number: '',
+    number: ''
   };
 
   handleChange = e => {
